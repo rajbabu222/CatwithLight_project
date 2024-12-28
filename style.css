@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.dark-background {
+  background-color: #0b0b0b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  text-align: center;
+  box-sizing: border-box;
+  padding: 16px; /* Add padding for smaller screens */
+}
+
+.bulb-image {
+  width: 100px;
+  max-width: 100%; /* Ensure responsiveness */
+}
+
+.cat-image {
+  width: 240px;
+  max-width: 100%; /* Ensure responsiveness */
+}
+
+.switch-card {
+  margin-top: 20px; /* Add spacing between elements */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.switch-board {
+  background-color: #7b8794;
+  width: 294px;
+  max-width: 100%; /* Adjust for smaller screens */
+  height: 139px;
+  border-radius: 12px;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.switch-status {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.on-switch, .off-switch {
+  color: #ffffff;
+  background-color: #cbd2d9;
+  font-family: "Roboto";
+  font-size: 18px; /* Adjust font size for smaller screens */
+  font-weight: bold;
+  width: 99px;
+  height: 44px;
+  border-radius: 8px;
+  margin: 8px; /* Add space between buttons */
+}
+
+.off-switch {
+  background-color: #e12d39;
+}
+
+.active {
+  background-color: #22c55e; /* Green for active state */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .bulb-image {
+    width: 120px; /* Adjust size for smaller screens */
+  }
+
+  .cat-image {
+    width: 200px; /* Adjust size for smaller screens */
+  }
+
+  .switch-board {
+    width: 100%; /* Use full width */
+    padding: 12px;
+  }
+
+  .switch-status {
+    font-size: 20px; /* Smaller font size for smaller screens */
+  }
+
+  .on-switch, .off-switch {
+    font-size: 16px; /* Smaller font size for buttons */
+    width: 80px; /* Adjust button width */
+    height: 40px; /* Adjust button height */
+  }
+}
